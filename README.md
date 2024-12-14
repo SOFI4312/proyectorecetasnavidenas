@@ -13,7 +13,9 @@ Centro Educativo: Instituto Pío
 
 Este es un proyecto de recetas navideñas que permite compartir y explorar recetas relacionadas con las fiestas navideñas. El proyecto está dividido en dos partes:
 un backend que gestiona las recetas y los usuarios, 
-y un frontend que permite a los usuarios interactuar con el sistema a través de una interfaz web. ## Descripción Este proyecto tiene como objetivo proporcionar una plataforma para compartir recetas navideñas de manera fácil y accesible.
+y un frontend que permite a los usuarios interactuar con el sistema a través de una interfaz web. 
+
+## Descripción Este proyecto tiene como objetivo proporcionar una plataforma para compartir recetas navideñas de manera fácil y accesible.
 Los usuarios pueden registrarse, agregar sus recetas favoritas, y ver las recetas de otros usuarios.
  
  # Características principales: 
