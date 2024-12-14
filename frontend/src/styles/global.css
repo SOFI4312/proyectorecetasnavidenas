@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+  background: url('https://i.pinimg.com/originals/e7/5f/e3/e75fe3099dc70d5712a93ad45d54df7d.png') no-repeat center center fixed;
+  background-size: cover; /* La imagen cubre toda la pantalla */
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #b71c1c; /* Rojo navideño */
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #b71c1c; /* Rojo navideño */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #388e3c; /* Verde navideño */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+/* Recipe Card */
+.recipe-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  max-width: 300px;
+  text-align: center;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.recipe-card h3 {
+  margin: 0.5rem 0;
+  color: #b71c1c; /* Rojo navideño */
+}
+
+.recipe-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* User Card */
+.user-card {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+.user-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #b71c1c; /* Rojo navideño */
+}
+
+.user-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Forms */
+form {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+form button {
+  background-color: #b71c1c; /* Rojo navideño */
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #8c1d1d;
+}
+
+/* Home and Lists */
+.home, .users-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.recipe-details {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Letra Comic Sans */
+}
+
+.recipe-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.recipe-details h1 {
+  color: #b71c1c; /* Rojo navideño */
+  margin-bottom: 1rem;
+}
+
+.recipe-details ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.recipe-details .error {
+  color: #388e3c; /* Verde navideño */
+  font-weight: bold;
+}
+
+/* Efecto de Nieve */
+@keyframes snow-fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  font-size: 1rem;
+  opacity: 0.8;
+  animation: snow-fall linear infinite;
+  pointer-events: none; /* Los copos no interferirán con el mouse */
+  z-index: 9999; /* Aparecen sobre el contenido */
+}
+
+.snowflake:nth-child(2n) {
+  font-size: 0.8rem;
+  animation-duration: 10s;
+}
+
+.snowflake:nth-child(3n) {
+  font-size: 1.2rem;
+  animation-duration: 12s;
+}
+
+/* Media Queries (Responsiveness) */
+
+/* En pantallas pequeñas, adaptamos el navbar y las tarjetas */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recipe-card {
+    width: 100%; /* Las tarjetas ocupan todo el ancho */
+    margin: 0.5rem;
+  }
+
+  form {
+    max-width: 90%; /* Formularios más estrechos en móviles */
+  }
+}
+
+/* En pantallas extra pequeñas, ajustamos más los elementos */
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .recipe-card h3 {
+    font-size: 1rem; /* Reducir tamaño del título */
+  }
+
+  .recipe-card p {
+    font-size: 0.8rem; /* Reducir tamaño del texto */
+  }
+
+  .recipe-details h1 {
+    font-size: 1.5rem; /* Reducir tamaño del título */
+  }
+}

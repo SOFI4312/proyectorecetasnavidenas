@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                                 /* Define la versión de JavaScript para los archivos emitidos */
+    "module": "commonjs",
+    "outDir": "./dist",                              /* Directorio donde se generarán los archivos JS compilados */
+    "rootDir": "./src",                              /* Directorio raíz donde están los archivos TS */
+    "esModuleInterop": true,                         /* Facilita la importación de módulos CommonJS */
+    "forceConsistentCasingInFileNames": true,        /* Garantiza que los nombres de los archivos sean consistentes en las importaciones */
+    "strict": true,                                  /* Habilita todas las opciones estrictas de verificación de tipos */
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types"]           /* Directorios donde se buscan definiciones de tipos */
+  },
+  "include": [
+    "src/**/*.ts"                                    /* Incluye todos los archivos .ts dentro de src */
+  ],
+  "exclude": [
+    "node_modules",                                  /* Excluye la carpeta node_modules */
+    "dist"                                           /* Excluye la carpeta dist, ya que se genera automáticamente */
+  ]
+}
